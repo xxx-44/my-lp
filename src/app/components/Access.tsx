@@ -1,6 +1,6 @@
 const Access = () => {
 	return (
-		<div className=' text-center '>
+		<div className=' text-center'>
 			<section>ACCESS</section>
 			<h3 className='mt-16 text-3xl mb-6'>PARK SIDE HALL</h3>
 			<p className='font-light'>
