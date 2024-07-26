@@ -37,7 +37,7 @@ const Information = () => {
 						HTML5 / CSS3 [ Tailwind ] / JS [ React , Nextjs ]<br />
 						Adobe [ Illustrator , Photoshop ] / Figma
 					</h3>
-					<h3 className='text-[32px] text-left tracking-wide font-semibold h-[40px] inline-block md:hidden'>
+					<h3 className='ml-6 text-[32px] text-left tracking-wide font-semibold h-[40px] inline-block md:hidden'>
 						SKILL: <br />
 						HTML5 / CSS3 [ Tailwind ] <br />
 						JS [ React , Nextjs ]<br />
