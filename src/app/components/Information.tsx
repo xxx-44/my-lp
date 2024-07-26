@@ -32,9 +32,15 @@ const Information = () => {
 					<section>ABOUT ME</section>
 					<p className='mt-11 text-2xl font-light h-6 mb-[5px]'>NAME: Shu</p>
 					<p className='text-lg font-light h-[18px] mb-[30px]'>フロントエンドエンジニアを目指してます！</p>
-					<h3 className='text-[40px] tracking-wide font-semibold h-[40px] inline-block'>
+					<h3 className='text-[40px] tracking-wide font-semibold h-[40px] md:inline-block hidden'>
 						SKILL: <br />
 						HTML5 / CSS3 [ Tailwind ] / JS [ React , Nextjs ]<br />
+						Adobe [ Illustrator , Photoshop ] / Figma
+					</h3>
+					<h3 className='text-[32px] text-left tracking-wide font-semibold h-[40px] inline-block md:hidden'>
+						SKILL: <br />
+						HTML5 / CSS3 [ Tailwind ] <br />
+						JS [ React , Nextjs ]<br />
 						Adobe [ Illustrator , Photoshop ] / Figma
 					</h3>
 					<p className='text-[18px] mt-[32px] font-light h-[44px] leading-6'>
