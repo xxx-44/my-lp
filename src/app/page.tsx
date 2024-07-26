@@ -103,11 +103,14 @@ export default function Home() {
 				{headState && <Header />}
 			</div>
 
-			<div ref={elementRef3}>
-				<Main />
+			<div ref={elementRef3} id='home'>
+				{/* <Main /> */}
 				<Information />
 			</div>
 
+			<div id='gallery' className={`${isElementInView ? 'animate-fade-out' : 'animate-fade-in'}`} ref={elementRef2}>
+				<Gallery />
+			</div>
 			<div
 				className={`hidden md:block fixed right-0 top-[44%]  ${
 					isElementInView2 ? 'animate-pop-in' : 'animate-pop-out'
@@ -115,19 +118,16 @@ export default function Home() {
 			>
 				{sideState && <Sidebar />}
 			</div>
-			<div className={`${isElementInView ? 'animate-fade-out' : 'animate-fade-in'}`} ref={elementRef2}>
-				<Gallery />
-			</div>
 
-			<div ref={elementRef}>
+			<div ref={elementRef} id='comment'>
 				<div
 					className={`${
-						bgState && 'bg-[url(/img/bg.jpg)] bg-cover bg-fixed fixed top-0 left-0 w-full h-screen -z-10'
+						bgState && 'bg-[url(/img/bg1.jpg)] bg-cover bg-fixed fixed top-0 left-0 w-full h-screen -z-10'
 					} ${isElementInView ? 'animate-fade-in-bg' : 'animate-fade-out'}`}
 				></div>
 				<Access />
 			</div>
-			<div>
+			<div id='contact'>
 				<Contact />
 			</div>
 

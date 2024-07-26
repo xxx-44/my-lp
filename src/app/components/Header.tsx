@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 const Header = () => {
 	const [buttonActive, setButtonActive] = useState(false);
@@ -7,13 +8,15 @@ const Header = () => {
 	const buttonTogle = () => {
 		setButtonActive(!buttonActive);
 		setMenuActive(true);
-		console.log(buttonActive);
 	};
 	return (
 		<div className='p-7'>
 			<div className='flex justify-between items-center'>
 				<div className='z-30'>
-					<Link href='/'>LOGO</Link>
+					<Link href='#home' className='flex justify-center items-center font-light gap-2'>
+						<FaArrowAltCircleUp />
+						<div>PAGE_TOP</div>
+					</Link>
 				</div>
 				<button className='flex flex-col gap-[9.5px] w-[30px] h-[30px] z-30' onClick={buttonTogle}>
 					<span
@@ -39,7 +42,21 @@ const Header = () => {
 			<div>
 				{menuActive && (
 					<div className={`text-center z-20 ${buttonActive ? 'animate-fade-in-down' : 'animate-fade-out-down'}`}>
-						<Link href='/'>HOME</Link>
+						<Link href='#home' className='block hover:scale-105  transition-all duration-300'>
+							HOME
+						</Link>
+						<Link href='#about' className='block  hover:scale-105 transition-all duration-300' onClick={buttonTogle}>
+							ABOUT ME
+						</Link>
+						<Link href='#gallery' className='block  hover:scale-105  transition-all duration-300' onClick={buttonTogle}>
+							GALLERY
+						</Link>
+						<Link href='#comment' className='block  hover:scale-105  transition-all duration-300' onClick={buttonTogle}>
+							COMMENT
+						</Link>
+						<Link href='#contact' className='block  hover:scale-105  transition-all duration-300' onClick={buttonTogle}>
+							CONTACT
+						</Link>
 					</div>
 				)}
 			</div>

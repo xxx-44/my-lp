@@ -7,53 +7,78 @@ const Gallery = () => {
 		<div className='text-center mb-[493px]'>
 			{/* <div className='text-center mb-[493px]'> */}
 			<FadeIn>
-				<section className='mb-[40px]'>GALLERY</section>
+				<section className='mb-[80px]'>GALLERY</section>
 			</FadeIn>
 			<FadeIn>
-				<div className='mx-[30px]'>
-					<Image
-						className='w-full md:w-auto md:mx-auto md:-translate-x-[192.5px] mb-[80px]'
-						src={'/img/flower1.jpg'}
-						alt={'gallery'}
-						width={355}
-						height={488}
-					/>
+				<div className='mx-[30px] relative'>
+					<a
+						href='https://astro-peach-sigma.vercel.app/posts/chat/'
+						className='inline-block md:mx-auto md:-translate-x-[192.5px] mb-[90px] opacity-80 hover:opacity-100 hover:-translate-y-5 transition-all duration-300 hover:scale-105'
+					>
+						<Image
+							className='w-full md:w-auto rounded-3xl'
+							src={'/img/chat.png'}
+							alt={'gallery'}
+							width={600}
+							height={400}
+						/>
+					</a>
+					{/* <div className='scale-y-[-1] absolute invisible md:visible'>
+						<div className='reflectEF'></div>
+						<Image src={'/img/chat.png'} alt={'gallery'} width={600} height={400} className=' w-full' />
+					</div> */}
 				</div>
 			</FadeIn>
 			<FadeIn>
 				<div className='mx-[30px]'>
-					<Image
-						className='w-full md:w-auto md:mx-auto md:translate-x-[192.5px] mb-[80px]'
-						src={'/img/flower2.jpg'}
-						alt={'gallery'}
-						width={355}
-						height={235}
-					/>
+					<a
+						href='https://astro-peach-sigma.vercel.app/posts/tasks/'
+						className='inline-block md:mx-auto md:translate-x-[192.5px] mb-[90px]  opacity-80 hover:opacity-100 hover:-translate-y-5 transition-all duration-300 hover:scale-105'
+					>
+						<Image
+							className='w-full md:w-auto rounded-3xl'
+							src={'/img/task.png'}
+							alt={'gallery'}
+							width={600}
+							height={400}
+						/>
+					</a>
 				</div>
 			</FadeIn>
 			<FadeIn>
 				<div className='mx-[30px]'>
-					<Image
-						className='w-full md:w-auto md:mx-auto md:-translate-x-[177.5px] mb-[80px]'
-						src={'/img/flower3.jpg'}
-						alt={'gallery'}
-						width={355}
-						height={335}
-					/>
+					<a
+						href='https://astro-peach-sigma.vercel.app/posts/poke/'
+						className='inline-block md:mx-auto md:-translate-x-[192.5px] mb-[90px]  opacity-80 hover:opacity-100 hover:-translate-y-5 transition-all duration-300 hover:scale-105'
+					>
+						<Image
+							className='w-full md:w-auto  rounded-3xl'
+							src={'/img/poke.png'}
+							alt={'gallery'}
+							width={600}
+							height={400}
+						/>
+					</a>
 				</div>
 			</FadeIn>
 			<FadeIn>
 				<div className='mx-[30px]'>
-					<Image
-						className='w-full md:w-auto md:mx-auto md:translate-x-[192.5px] mb-[80px]'
-						src={'/img/flower4.jpg'}
-						alt={'gallery'}
-						width={355}
-						height={533}
-					/>
+					<a
+						href='https://astro-peach-sigma.vercel.app/posts/blog/'
+						className='inline-block md:mx-auto md:translate-x-[192.5px] mb-[90px]  opacity-80 hover:opacity-100 hover:-translate-y-5 transition-all duration-300 hover:scale-105'
+					>
+						{' '}
+						<Image
+							className='w-full md:w-auto rounded-3xl'
+							src={'/img/blog.png'}
+							alt={'gallery'}
+							width={600}
+							height={400}
+						/>
+					</a>
 				</div>
 			</FadeIn>
-			<FadeIn>
+			{/* <FadeIn>
 				<div className='mx-[30px]'>
 					<Image
 						className='w-full md:w-auto md:mx-auto md:-translate-x-[192.5px] mb-[80px]'
@@ -74,7 +99,7 @@ const Gallery = () => {
 						height={235}
 					/>
 				</div>
-			</FadeIn>
+			</FadeIn> */}
 		</div>
 	);
 };
