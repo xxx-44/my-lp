@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
 	const generateMailtoLink = (user: string, domain: string) => {
-		return `mailto:${user}@${domain}`;
+		return `mailto:${user}@${domain}?subject=お問い合わせ`;
 	};
 	const mailUser = 'shu.web44';
 	const mailDomain = 'gmail.com';
