@@ -22,8 +22,8 @@ const Gallery = () => {
 							width={600}
 							height={600}
 						/> */}
-						<div className='w-[600px] h-[600px]'>
-							<video src='/chat.mp4' className='w-full md:w-auto rounded-3xl' controls playsInline />
+						<div className='md:w-[600px] h-[600px] w-auto'>
+							<video src='/chat.mp4' controls playsInline />
 						</div>
 					</a>
 					{/* <div className='scale-y-[-1] absolute invisible md:visible'>
