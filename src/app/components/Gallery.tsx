@@ -15,13 +15,16 @@ const Gallery = () => {
 						href='https://astro-peach-sigma.vercel.app/posts/chat/'
 						className='inline-block md:mx-auto md:-translate-x-[192.5px] mb-[90px] opacity-80 hover:opacity-100 hover:-translate-y-5 transition-all duration-300 hover:scale-105'
 					>
-						<Image
+						{/* <Image
 							className='w-full md:w-auto rounded-3xl'
 							src={'/img/chat.png'}
 							alt={'gallery'}
 							width={600}
-							height={400}
-						/>
+							height={600}
+						/> */}
+						<div className='w-[600px] h-[600px]'>
+							<video src='/chat.mp4' className='w-full md:w-auto rounded-3xl' controls playsInline />
+						</div>
 					</a>
 					{/* <div className='scale-y-[-1] absolute invisible md:visible'>
 						<div className='reflectEF'></div>
